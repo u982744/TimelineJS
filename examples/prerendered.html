@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Timeline JS pre-rendered example</title>
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <!-- BEGIN TimelineJS -->
+    <script type="text/javascript" src="TimelineJs/compiled/js/storyjs-embed.js"></script>
+    <script>
+        $(document).ready(function() {
+            createStoryJS({
+                type:       'timeline',
+                width:      '100%',
+                height:     '600',
+                source:     'https://docs.google.com/spreadsheet/pub?key=0Agf_Rsp9OoPBdF9Rc1ZpYTF5LU0yc01CeGFzY3JRQ1E&output=html',
+                embed_id:   'my-timeline',
+                debug: true,
+                prerendered: true
+            });
+        });
+    </script>
+    <!-- END TimelineJS -->
+</head>
+<body>
+    <div id="my-timeline">
+        <div id="storyjs-timeline" class="vco-timeline vco-storyjs">
+            <div class="vco-container vco-main">
+                <div class="vco-feature">
+                    <div class="vco-slider">
+                        <div class="slider-container-mask">
+                            <div class="slider-container">
+                                <div class="slider-item-container">
+                                    <div class="slider-item">
+                                        <div class="content">
+                                            <div class="content-container layout-text-media pad-left">
+                                                <div class="media"><div class="media-wrapper">
+                                                    <div class="media-container">
+                                                        <div class="media-image media-shadow">
+                                                            <a href="http://www.flickr.com/photos/zachwise/6115056146/in/photostream" target="_blank">
+                                                                <img id="nmPZzNV" src="http://farm7.staticflickr.com/6081/6115056146_be798dc899.jpg">
+                                                            </a>
+                                                        </div>
+                                                        <div class="credit">Zach Wise/verite.co</div>
+                                                        <div class="caption">
+                                                            <a href="http://www.flickr.com/photos/zachwise/6115056146/" title="Chicago by zach.wise, on Flickr">Chicago by zach.wise</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                </div>
+                                                <div class="text">
+                                                    <div class="container">
+                                                        <h2 class="start">Google Spreadsheet Example</h2>
+                                                        <p>This is a test of using google spreadsheets as a source for the timeline tool</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="content"><div class="content-container layout-text-media pad-left"><div class="media"><div class="media-wrapper"><div class="media-container"><div class="media-image media-shadow"><a href="http://www.flickr.com/photos/zachwise/6894476777/in/photostream" target="_blank"><img id="svFouZ" src="http://farm8.staticflickr.com/7192/6894476777_f321ea75a4.jpg"></a></div><div class="credit">Zach Wise/verite.co</div><div class="caption">Chicago to NYC</div></div></div></div><div class="text"><div class="container"><h2 class="date">November 1, 2011<span class="slide-tag">news</span></h2><h3>Another Flickr Example</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.
+            </p></div></div></div></div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="content"><div class="content-container layout-text-media pad-left"><div class="media"><div class="media-wrapper"><div class="media-container"><div class="media-image media-shadow"><img src="http://www.sbs.com.au/food/sites/default/files/styles/single/public/DFJ%20Adam%20Food%20Shots%20%2816%20of%2042%29%20-%20Eggplant%20dengaku_0.jpg?itok=nn2wbeNE" class="media-image"></div><div class="credit">Greg Solenström</div><div class="caption">Jay Z - "Hello Brooklyn"</div></div></div></div><div class="text"><div class="container"><h2 class="date">November 16, 2011 — November 17, 2011<span class="slide-tag">sport</span></h2><h3>Vimeo — Jay Z - "Hello Brooklyn"</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim.
+            </p></div></div></div></div>
+                                    </div>
+                                    <div class="slider-item">
+                                        <div class="content"><div class="content-container layout-media"><div class="text"><div class="container"><h2 class="date">December 1, 2011<span class="slide-tag">sport</span></h2><h3>SoundCloud — Lotus Flower - SBTRKT RMX</h3></div></div><div class="media"><div class="media-wrapper"><div class="media-container"><div class="media-frame media-shadow soundcloud" id="BYmIVNk"><iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=http%3A%2F%2Fapi.soundcloud.com%2Ftracks%2F20389181&amp;show_artwork=true&amp;callback=jQuery17204558850850444287_1379394025087&amp;_=1379394027558"></iframe></div><div class="credit">Radiohead</div><div class="caption">Lotus Flower - SBTRKT RMX</div></div></div></div></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="nav-next">
+                            <div class="nav-container">
+                                <div class="icon">&nbsp;</div>
+                                <div class="date">November 1, 2011</div>
+                                <div class="title">Another Flickr Example</div>
+                            </div>
+                        </div>
+                        <div class="nav-previous">
+                            <div class="nav-container">
+                                <div class="icon">&nbsp;</div>
+                                <div class="date"></div>
+                                <div class="title"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

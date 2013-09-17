@@ -7152,15 +7152,14 @@ if(typeof VMM != 'undefined' && typeof VMM.Timeline == 'undefined') {
         $container = $($timeline).find(".vco-container.vco-main");
         $feature = $($container).find(".vco-feature");
         $slider = $($feature).find(".vco-slider");
-        $navigation = $($container).find(".vco-navigation");
-        $feedback = $($timeline).find(".vco-feedback");
       } else {
         $container	= VMM.appendAndGetElement($timeline, "<div>", "vco-container vco-main");
         $feature	= VMM.appendAndGetElement($container, "<div>", "vco-feature");
         $slider		= VMM.appendAndGetElement($feature, "<div>", "vco-slider");
-        $navigation	= VMM.appendAndGetElement($container, "<div>", "vco-navigation");
-        $feedback	= VMM.appendAndGetElement($timeline, "<div>", "vco-feedback", "");
       }
+
+      $navigation	= VMM.appendAndGetElement($container, "<div>", "vco-navigation");
+      $feedback	= VMM.appendAndGetElement($timeline, "<div>", "vco-feedback", "");
 
 			if (typeof config.language.right_to_left != 'undefined') {
 				VMM.Lib.addClass($timeline, "vco-right-to-left");
